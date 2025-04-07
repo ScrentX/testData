@@ -42,3 +42,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+  class User extends Model
+  {
+    protected $table = "User";
+    protected $fillable = ["username", "password"];
+  }
